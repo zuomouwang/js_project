@@ -1,0 +1,27 @@
+body {
+  background-color: #7b77cd96;
+}
+body .div_box {
+  margin: 300px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 1600px;
+  height: 100px;
+}
+body .div_box div {
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  color: #fff;
+  transition: all 0.08s;
+  border: 5px solid skyblue;
+  border-radius: 10px;
+}
+.active {
+  transform: scale(1.1);
+  border: 5px solid #ab4f9278 !important;
+  box-shadow: 0 0 10px 2px ;
+}
