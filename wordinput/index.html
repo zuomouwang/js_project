@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="./lib/font/iconfont.css">
+    <link rel="stylesheet" href="./lib/index.css">
+    <link rel="stylesheet" href="./lib/base.css">
+    <script src="./lib/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+    <script src="./lib/md5.js"></script>
+    <script src="./lib/index.js"></script>
+    <title>单词</title>
+</head>
+<body>
+    <div class="body_input">
+        <div class="box">
+            <span class="input">
+             
+             </span>
+        </div>
+        <span class="disable iconfont icon-sound-filling-fill"></span>
+        <div class="group">
+            <em></em>
+            <span class="iconfont icon-arrow-right"></span>
+           
+            <ul class="two">
+                <!-- <li>组名1</li> -->
+            </ul>
+        </div>
+        <ul class="add_word" >
+            <li>已有单词</li>
+            <li>添加单词</li>
+            <li>修改组名</li>
+            <li>删除单词</li>
+        </ul>
+        <div class="input_groupname">
+            <input type="text" class="one" placeholder="请输入组名">
+            <button>添加</button>
+            <em>请输入1~16位字符</em>
+            <span class="close iconfont icon-close"></span>
+        </div>
+        <div class="input_word">
+            <input type="text" class="one" placeholder="请输入英语单词">
+            <button>添加</button>
+            <em>请输入1~16位英文字母</em>
+            <span class="close iconfont icon-close"></span>
+        </div>
+        <div class="displayword">
+           <table>
+            <tbody>
+            </tbody>
+           </table>
+           <span class="close iconfont icon-close"></span>
+        </div>
+        <div class="deleteword">
+            <table>
+             <tbody>
+             </tbody>
+            </table>
+            <span class="close iconfont icon-close"></span>
+         </div>
+         <div class="tanchuang">
+            <div class="mask"></div>
+            <div class="one">
+                <span>是否删除<em>blue</em></span>
+                <button class="btn1">是</button>
+                <button class="btn2">否</button>
+            </div>
+         </div>
+        <div class="zh">
+            <span>
+                
+            </span>
+        </div>
+        <div class="entozh">
+            翻译选项
+           <ul>
+                <li class="active_entozh">百度翻译</li>
+                <li>有道翻译</li>
+            </ul>
+        </div>
+        <div class="hint" style="display: none;">
+            <button class="one">重新开始</button>
+            <button class="two">从选择处开始</button>
+        </div>
+        <span class="audio_word_a iconfont icon-sound-filling-fill" target="_top" >英式发音</span>
+        <span class="audio_word_e iconfont icon-sound-filling-fill" target="_top" >美式发音</span>
+    </div>
+   
+    <audio src="./audio/right.wav" class="right" ></audio>
+    <audio src="./audio/right2.wav" class="wrong"></audio>
+    <audio src="" class="word" autoplay style="display: none;"></audio>
+</body>
+</html>
