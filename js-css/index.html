@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/base.css">
+    <link rel="stylesheet" href="./lib/index.css">
+    <link rel="shortcut icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/x-icon">
+    <title>JS控制CSS变量</title>
+</head>
+<body>
+    <h2><em>JS</em>控制CSS变量</h2>
+    <div class="box">
+        <span>间距:</span>
+        <input type="range" max="250" min="10" value="10" data-dw="px" data-var="--padding">
+        <span>模糊:</span>
+        <input type="range" max="50" min="0" value="5" data-dw="px" data-var="--blur">
+        <span>颜色:</span>
+        <input type="color" data-dw="" data-var="--color" value="#210e77">
+    </div>
+    <img src="./img/mn.webp" alt="" >
+    <script>
+        
+        let inputs=document.querySelectorAll('input')
+        let img=document.querySelector('img')
+        for(let i=0;i<inputs.length;i++)
+        {
+            inputs[i].addEventListener('mousemove',function(){
+              document.documentElement.style.setProperty(this.dataset.var,this.value+this.dataset.dw)
+            })
+            inputs[i].addEventListener('change',function(){
+              document.documentElement.style.setProperty(this.dataset.var,this.value+this.dataset.dw)
+            })
+        }
+    </script>
+</body>
+</html>
