@@ -1,0 +1,47 @@
+body .box {
+  user-select: none;
+  margin: 10vh auto;
+  width: 40vh;
+  height: 70vh;
+  background-color: #87ceeb52;
+  border-radius: 2vh;
+}
+body .box ul li {
+  height: 10vh;
+  display: flex;
+  padding-bottom: 0;
+  border-bottom: 1px solid #000;
+  line-height: 10vh;
+}
+body .box ul li input {
+  margin: 1vh;
+  width: 1vh;
+  flex: 0.3;
+  margin-right: 1vh;
+  border-right: 1px solid #000;
+}
+body .box ul li .move {
+  display: flex;
+  flex: 6;
+}
+body .box ul li .move p {
+  padding: 1vh;
+  line-height: 9vh;
+  flex: 5;
+  font-size: 2vh;
+  user-select: none;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+body .box ul li .move span {
+  padding: 1vh;
+  font-size: 2vh;
+  flex: 1;
+  cursor: pointer;
+}
+body .box ul li .active {
+  background-color: #00000040;
+}
+body .box ul li:nth-last-child(1) {
+  border-bottom: 0px solid #000;
+}
