@@ -1,0 +1,10 @@
+// @import "~element-plus/theme-chalk/index.css";
+@import 'element-plus/dist/index.css';
+// 引入Element Plus的样式
+// @import "~element-plus/packages/theme-chalk/src/index.scss";
+
+// 自定义样式
+// ...
+  .el-carousel__arrow--left {
+  left: 270px;
+}
